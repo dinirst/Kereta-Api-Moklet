@@ -52,7 +52,7 @@ public class nyoba extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jPanel4 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -145,11 +145,11 @@ public class nyoba extends javax.swing.JFrame {
 
         bayi.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "---", "1", "2", "3", "4" }));
         getContentPane().add(bayi);
-        bayi.setBounds(150, 290, 90, 20);
+        bayi.setBounds(150, 290, 90, 22);
 
         dewasa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "---", "1", "2", "3", "4" }));
         getContentPane().add(dewasa);
-        dewasa.setBounds(20, 290, 90, 20);
+        dewasa.setBounds(20, 290, 90, 22);
 
         nama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,10 +180,8 @@ public class nyoba extends javax.swing.JFrame {
         jLabel1.setText("KERETA API MOKLET");
         jPanel2.add(jLabel1);
         jLabel1.setBounds(228, 11, 336, 46);
-
-        jLabel12.setIcon(new javax.swing.ImageIcon("G:\\ge um22c.gif")); // NOI18N
-        jPanel2.add(jLabel12);
-        jLabel12.setBounds(20, 60, 680, 360);
+        jPanel2.add(jDateChooser1);
+        jDateChooser1.setBounds(433, 270, 230, 30);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 700, 330);
@@ -312,10 +310,10 @@ public class nyoba extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> dewasa;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
